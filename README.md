@@ -3,12 +3,14 @@
 - 谈谈个人对这三种架构的理解，本文实现最简单的案例。为了看清逻辑结构，MVVM封装的部分没有考虑内存问题。
 
 ### 效果图
-![](./images/demo0.jpg)
-![](./images/demo1.jpg)
+![](./images/demo.png)
 
 - 如上图，需要一个点击事件和一个数据刷新。
 
 - MVC 实现
+
+![](./images/mvc.png)
+
 ```swift
 UserViewController.swift
 // MARK: - 监听事件
@@ -30,7 +32,11 @@ extension UserViewController {
 }
 ```
 
+
+
 - MVP 实现
+
+![](./images/mvp.png)
 ```swift
 UserViewController1.swift
 // MARK: - 监听事件
@@ -77,6 +83,8 @@ class UserView1Presenter {
 ```
 
 - MVVM 实现
+
+![](./images/mvvm.png)
 ```swift
 UserViewController2.swift
 // MARK: - 绑定信号
