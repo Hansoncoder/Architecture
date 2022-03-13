@@ -43,7 +43,8 @@ extension UserViewController {
     
     // 2.处理事件、业务逻辑、刷新UI
     private func getUserInfo() {
-        let user = User(name: "张三", age: Int(arc4random()) % 30)
+        let age = Int(arc4random()) % 30
+        let user = User(name: "张三", age: age)
         
         userView.configInfo(user)
     }

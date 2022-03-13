@@ -21,7 +21,8 @@ class UserViewModel {
         
         /// 1.处理业务逻辑
         input.subscrib(fireNow: false) {[weak self] _ in
-            let user = User(name: "张三", age: Int(arc4random()) % 30)
+            let age = Int(arc4random()) % 30
+            let user = User(name: "张三", age: age)
             self?.output?.value = ViewData2(user: user)
         }
         

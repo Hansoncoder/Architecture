@@ -30,7 +30,9 @@ class UserView1Presenter {
     
     // 1.提供 UI 处理能力， 处理业务逻辑
     public func getUserInfo() {
-        let user = User(name: "李四", age: Int(arc4random()) % 30)
+        
+        let age = Int(arc4random()) % 30
+        let user = User(name: "李四", age: age)
         
         // 2. 拿到数据，处理将数据，调用刷新协议
         delegate?.refreshData(ViewData(user: user))
