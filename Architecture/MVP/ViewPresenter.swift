@@ -12,13 +12,6 @@ protocol Userview1Protoco: AnyObject {
     func refreshData(_ data: UserViewData)
 }
 
-// 数据处理
-struct ViewData: UserViewData {
-    let user: User
-    var name: String { return "姓名：" + user.name }
-    var age: String { return "年龄：\(user.age)" }
-}
-
 /// Presenter:
 /// 1.负责处理业务逻辑
 /// 2.负责将处理好的数据，调用刷新UI的协议
@@ -37,4 +30,11 @@ class UserView1Presenter {
         // 2. 拿到数据，处理将数据，调用刷新协议
         delegate?.refreshData(ViewData(user: user))
     }
+}
+
+// 数据处理
+struct ViewData: UserViewData {
+    let user: User
+    var name: String { return "姓名：" + user.name }
+    var age: String { return "年龄：\(user.age)" }
 }
