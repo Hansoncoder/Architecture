@@ -186,8 +186,8 @@
 			children = (
 				C0D66FB727DB9E1600B027ED /* View2.swift */,
 				C0D66FB027DB978100B027ED /* Model2.swift */,
-				C0D66FB127DB979300B027ED /* ViewModel.swift */,
 				C0D66FB327DB97A300B027ED /* ViewController2.swift */,
+				C0D66FB127DB979300B027ED /* ViewModel.swift */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
