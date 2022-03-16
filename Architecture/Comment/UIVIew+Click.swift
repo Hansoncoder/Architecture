@@ -8,7 +8,17 @@
 import UIKit
 
 extension UIView {
+    // MARK: - public
+    public func addClick<T: AnyObject>(on target: T, block: ((T) -> Void)?) {
+        self.block = {[weak target] in
+            guard let target = target else {
+                return nil
+            }
+            return block?(target)
+        }
+    }
     
+    // MARK: - private set
     private struct AssociatedKeys {
         static var clickedKey = "AddClickedEvent"
     }
@@ -23,21 +33,12 @@ extension UIView {
         }
     }
     
-    func addClick<T: AnyObject>(on target: T, block: ((T) -> Void)?) {
-        self.block = {[weak target] in
-            guard let target = target else {
-                return nil
-            }
-            return block?(target)
-        }
-    }
-    
     private func addTapGesture() {
         if (self.gestureRecognizers == nil) {
             
             self.isUserInteractionEnabled = true
             
-            // :添加单击事件
+            // 添加单击事件
             let tap = UITapGestureRecognizer(target: self, action: #selector(tagAction))
             self.addGestureRecognizer(tap)
         }

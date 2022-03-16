@@ -20,19 +20,18 @@ class UserView1Presenter {
     init(delegate: Userview1Protoco) {
         self.delegate = delegate
     }
-    
+
     // 1.提供 UI 处理能力， 处理业务逻辑
     public func getUserInfo() {
-        
         let age = Int(arc4random()) % 30
         let user = User(name: "李四", age: age)
-        
+
         // 2. 拿到数据，处理将数据，调用刷新协议
         delegate?.refreshData(ViewData(user: user))
     }
 }
 
-// 数据处理
+// 数据处理，如果比较复杂，分文件
 struct ViewData: UserViewData {
     let user: User
     var name: String { return "姓名：" + user.name }

@@ -29,11 +29,9 @@
 		C0D66FB427DB97A300B027ED /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D66FB327DB97A300B027ED /* ViewController2.swift */; };
 		C0D66FB627DB98D200B027ED /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D66FB527DB98D200B027ED /* Observable.swift */; };
 		C0D66FB827DB9E1600B027ED /* View2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D66FB727DB9E1600B027ED /* View2.swift */; };
-		C0D66FBA27DBA3FC00B027ED /* ViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D66FB927DBA3FC00B027ED /* ViewData.swift */; };
-		C0D66FBC27DD4BC300B027ED /* HSMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D66FBB27DD4BC300B027ED /* HSMonitor.swift */; };
 		C0D66FBE27DD4F1D00B027ED /* UIView+display.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D66FBD27DD4F1D00B027ED /* UIView+display.swift */; };
-		C0D66FC027DD99AC00B027ED /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D66FBF27DD99AB00B027ED /* test.swift */; };
 		C0D66FC427DF185A00B027ED /* UserViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D66FC327DF185A00B027ED /* UserViewTests.swift */; };
+		C0D66FC627DFD6A000B027ED /* GCDUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D66FC527DFD6A000B027ED /* GCDUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,11 +79,9 @@
 		C0D66FB327DB97A300B027ED /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		C0D66FB527DB98D200B027ED /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		C0D66FB727DB9E1600B027ED /* View2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View2.swift; sourceTree = "<group>"; };
-		C0D66FB927DBA3FC00B027ED /* ViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewData.swift; sourceTree = "<group>"; };
-		C0D66FBB27DD4BC300B027ED /* HSMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSMonitor.swift; sourceTree = "<group>"; };
 		C0D66FBD27DD4F1D00B027ED /* UIView+display.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+display.swift"; sourceTree = "<group>"; };
-		C0D66FBF27DD99AB00B027ED /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		C0D66FC327DF185A00B027ED /* UserViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewTests.swift; sourceTree = "<group>"; };
+		C0D66FC527DFD6A000B027ED /* GCDUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,7 +185,6 @@
 			isa = PBXGroup;
 			children = (
 				C0D66FB727DB9E1600B027ED /* View2.swift */,
-				C0D66FB927DBA3FC00B027ED /* ViewData.swift */,
 				C0D66FB027DB978100B027ED /* Model2.swift */,
 				C0D66FB127DB979300B027ED /* ViewModel.swift */,
 				C0D66FB327DB97A300B027ED /* ViewController2.swift */,
@@ -203,8 +198,8 @@
 				C0D66FA327DB899400B027ED /* UIView+Frame.swift */,
 				C0D66FA527DB8E2B00B027ED /* UIVIew+Click.swift */,
 				C0D66FB527DB98D200B027ED /* Observable.swift */,
-				C0D66FBB27DD4BC300B027ED /* HSMonitor.swift */,
 				C0D66FBD27DD4F1D00B027ED /* UIView+display.swift */,
+				C0D66FC527DFD6A000B027ED /* GCDUtils.swift */,
 			);
 			path = Comment;
 			sourceTree = "<group>";
@@ -226,7 +221,6 @@
 				C0D66F7227DB87E900B027ED /* Assets.xcassets */,
 				C0D66F7427DB87E900B027ED /* LaunchScreen.storyboard */,
 				C0D66F7727DB87E900B027ED /* Info.plist */,
-				C0D66FBF27DD99AB00B027ED /* test.swift */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -370,16 +364,14 @@
 				C0D66F6E27DB87E600B027ED /* MainViewController.swift in Sources */,
 				C0D66F6A27DB87E600B027ED /* AppDelegate.swift in Sources */,
 				C0D66FB827DB9E1600B027ED /* View2.swift in Sources */,
-				C0D66FBC27DD4BC300B027ED /* HSMonitor.swift in Sources */,
 				C0D66FA427DB899400B027ED /* UIView+Frame.swift in Sources */,
 				C0D66FAE27DB91A300B027ED /* ViewPresenter.swift in Sources */,
 				C0D66FAC27DB918A00B027ED /* ViewController1.swift in Sources */,
+				C0D66FC627DFD6A000B027ED /* GCDUtils.swift in Sources */,
 				C0D66FB427DB97A300B027ED /* ViewController2.swift in Sources */,
-				C0D66FC027DD99AC00B027ED /* test.swift in Sources */,
 				C0D66F6C27DB87E600B027ED /* SceneDelegate.swift in Sources */,
 				C0D66FB227DB979300B027ED /* ViewModel.swift in Sources */,
 				C0D66F9D27DB886100B027ED /* View.swift in Sources */,
-				C0D66FBA27DBA3FC00B027ED /* ViewData.swift in Sources */,
 				C0D66FA627DB8E2B00B027ED /* UIVIew+Click.swift in Sources */,
 				C0D66FAA27DB917F00B027ED /* Model1.swift in Sources */,
 			);
@@ -561,8 +553,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 683HSRVK9N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Architecture/Resource/Info.plist;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "此标识符将用于向您推荐个性化广告。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -588,8 +582,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 683HSRVK9N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Architecture/Resource/Info.plist;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "此标识符将用于向您推荐个性化广告。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
